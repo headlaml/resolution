@@ -1,0 +1,167 @@
+html, body {
+	background-color: white;
+	height: 100%;
+	font: helvetica, sans-serif, solid;
+}
+
+$color: #0064A6;
+$rowColor: #217AB2;
+/*#wrapper{
+	position: absolute;
+	height: 100%;
+}*/
+
+.filter-area {
+	border: 1px solid lightgrey;
+	width: 250px;
+	height: auto;
+	background-color: white;
+}
+#header{
+	background-color: $color;
+	color: white;
+}
+
+.input-append button.add-on {
+    height: inherit !important;
+}
+
+.search-box{
+	width: 240px;
+}
+
+.header {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%, rgba(209,209,209,1) 100%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(219,219,219,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(219,219,219,1) 100%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(219,219,219,1) 100%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(219,219,219,1) 100%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(219,219,219,1) 100%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
+	padding-left: 5px;
+	height:25px;
+}
+#cards {
+	border: 1px solid lightgrey;
+	height: auto;
+	margin-left: 256px;
+	background-color: white;
+}
+
+.card {
+	width: 150px;
+	height: 80px;
+	border: 1px solid lightgrey;
+	display: inline-block;
+	-webkit-user-select: none;
+	cursor: url(magnify.cur), -moz-zoom-in;
+	transition: all 0.5s ease; 
+}
+
+.card:active {
+	height: 150px;
+	width: 230px;
+	position: relative;
+}
+
+.card-header {
+	height: 20px;
+	background-color: #0064a6;
+	color: white;
+}
+
+#titles {
+	margin-left: 5px;
+}
+
+#titles p {
+	display: inline-block;
+	border: 2px solid #333;
+	padding: 5px;
+	font-weight: bold;
+}
+
+#titles p:hover {
+	background-color: #333;
+	color: white;
+	cursor: pointer;	
+}
+
+li {
+	display: inline;
+	font-size: 1.5em;
+	line-height: 32px;
+
+	a {
+		color: white;
+		
+		&:hover {
+			color: white;
+			
+			text-decoration: none;
+		}
+
+		
+	}
+
+	&:hover {
+			background-color: #333;
+		}
+}
+	
+
+#title{
+	background-color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#header-title {
+	font-size: 2.0em;
+}
+
+#selected {
+	background-color: lightPink;
+}
+
+.row {
+	background-color: lighten($rowColor, 41%);
+	border-bottom: solid 1px $color;
+	font-size: 0.83em;
+}
+
+.icon {
+		height: 32px;
+		width: 32px;
+		float: left;
+		margin-right: 10px;
+	}
+
+/*.icon{
+		height: 32px;
+		width: 32px;
+	}*/
+
+#app{
+	/*position: absolute;
+	left: -170px;
+	top: 5px;*/
+}	
+
+/*#search-button, #app-button, #user-button,, #list-button{
+		height: auto;
+		display: inline;
+		position: absolute;
+}*/
+
+
+#res{ background: url('../../Assets/Images/Message-Warning.png'); background-repeat:no-repeat;}
+
+
+
+
+#app-button, #user-button, #manual-button, #diary-button{
+		position: relative;
+}

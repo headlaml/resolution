@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/site.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" />
+
+		
+	</head>
+	<body>
+
+
+	<!-- Manual Resolution -->
+
+		<!-- Bootstrap -->
+
+			<form class="filter-area">
+				<div class="header" class="filter-area">Search</div>
+				<div class="input-append">
+					<input type="text" name="search-box" class="search-box"/>
+					<input type="checkbox" name="keep-filter">Keep filter selections</input>
+					<button class="btn add-on">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+			</form>
+
+			<form class="filter-area">
+				<div class="header" class="filter-area">Filter By</div>
+				<div class="input-append">
+					<input type="text" name="search-box" class="search-box"/>
+					<input type="checkbox" name="keep-filter">Keep filter selections</input>
+					<button class="btn add-on">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+			</form>
+
+			<div class="accordian" id="accordian2">
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseOne">
+				Time
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseOne" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				To
+				From
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseTwo">
+				Error code
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseTwo" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				E100
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseThree">
+				Error
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseThree" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				Unknown service ID
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseFour">
+				Source
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseFour" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				Choose and Book
+				Patient Admin System
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseFive">
+				Action
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseFive" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				Request available slots
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseSix">
+				ID
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseSix" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				Conversation ID
+				Message ID
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseSeven">
+				UBRN/USRN
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseSeven" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				UBRN
+				USRN
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseEight">
+				Service Name
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseEight" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				<input id="Service_Name" type="text"\> 
+				</div>
+			</div>
+
+			<div class="accordian-group">
+				<div class="accordian-heading">
+				<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseEight">
+				Resolution
+				</a>
+				</div>
+			</div> 
+
+			<div id="collapseEight" class="accordian-body collapse in">
+				<div class="accordian-inner">
+				<input id="resolution" type="text"\> 
+				</div>
+			</div>
+		</div>	
+
+			<div id="cards">
+				<span id="titles">
+					<p>Patient Admin System (4)</p>
+					<p>Choose and Book (5)</p>
+					<p>System Failure (8)</p>
+					<p>All (17)</p>
+				</span>
+			</div>
+
+		<div id="errors">
+			<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+
+
+		<!--  Bootstrap  
+		<div class="row" id="header">
+			<ul id="header-list">
+				<li id="header-title" class="col-md-3">
+					<a href="#"><span id="res" class="icon"></span>Manual Resolution</a>
+				</li>	
+			
+				<li id="header-date" class="col-md-3">
+					<a href="#"><span id="" class=""></span></a>
+				</li>
+
+				<li id="find-patient" class="col-md-2">
+					<a href="#"><span id="find" class="icon"></span></a>
+				</li>
+
+				<li id="today-list" class="col-md-2">
+					<a href="#"><span id="list" class="icon"></span>Cards</a>
+				</li>
+
+				<li class="col-md-2">
+					<a href="#"><span id="arrivals" class="icon"></span>List</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="row" id="title">
+			<div class="col-md-3"><input type="search" name="search" value="Filter patient"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Location"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Clinic Group(s)"></div>
+			<div class="col-md-3"><input type="search" name="search" value="Select Clinics"></div><br>
+		</div>
+
+
+		<div class="row" id="item">
+			<div class="col-md-1">Date</div>
+			<div class="col-md-1">Time</div>
+			<div class="col-md-2">Patient</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
+			<div class="col-md-1">Named Performer</div>
+			<div class="col-md-1">Appointment Type</div>
+			<div class="col-md-1">Priority</div>
+			<div class="col-md-2">Clinic</div>
+		</div>
+
+		<div class="row" id="selected">
+			<div class="col-md-1">03-Aug-2013</div>
+			<div class="col-md-1">09:00</div>
+			<div class="col-md-2"><strong>FITZGERALD</strong>, Charles (Mr)</div>
+			<div class="col-md-2">Born <strong>01-Jan-1992</strong></div>
+			<div class="col-md-1">Gender <strong>Male</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:00</div>
+			<div class="col-md-2"><strong>RICHARDSON</strong>, Wendy (Ms)</div>
+			<div class="col-md-2">Born <strong>12-Oct-1996</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:15</div>
+			<div class="col-md-2"><strong>RICHARDSON</strong>, Wendy (Ms)</div>
+			<div class="col-md-2">Born <strong>12-Oct-1996</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:30</div>
+			<div class="col-md-2"><strong>CAMERON</strong>, Maria (Mrs)</div>
+			<div class="col-md-2">Born <strong>21-Apr-1972</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">10:45</div>
+			<div class="col-md-2"><strong>CAMERON</strong>, Maria (Mrs)</div>
+			<div class="col-md-2">Born <strong>21-Apr-1972</strong></div>
+			<div class="col-md-1">Gender <strong>Female</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">04-Aug-2013</div>
+			<div class="col-md-1">11:00</div>
+			<div class="col-md-2"><strong>JONES</strong>, Bob (Mr)</div>
+			<div class="col-md-2">Born <strong>10-Mar-2000</strong></div>
+			<div class="col-md-1">Gender <strong>Male</strong></div>
+			<div class="col-md-1"><strong>SMITH</strong>, Ian (Dr)</div>
+			<div class="col-md-1">First Outpatient</div>
+			<div class="col-md-1">Routine</div>
+			<div class="col-md-2">Woodgrove Surgery</div>
+		</div>-->
+			<!--  Apex  -->
+			<!-- <div id="sideNav">
+				<div id="content">
+					<div id="search-button">
+						<span class="icon" id="search"></span>
+						<span><a href="#">Search</a></span>
+						<input type="search" name="search"><br><br>
+					</div>	
+					
+					<div id="app-button">
+						<span class="icon" id="app"></span>
+						<span><a href="#">Appointments</a>
+					</div>	
+					<div id="setup-button">
+						<span class="icon" id="setup"></span>
+						<span><a href="#">Clinic Setup</a>
+					</div>
+					<div id="manual-button">	
+						<span class="icon" id="manual"></span>
+						<span><a href="#">Manual Resolution</a>
+					</div>
+					<div id="diary-button">	
+						<span class="icon" id="diary"></span>
+						<span><a href="#">Clinic Diary</a>
+					</div>
+				</div>	
+			</div> -->
+
+			<!-- Semantic
+
+			<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="semantic/packaged/css/semantic.min.css"/>
+	<link rel="stylesheet" type="text/css" href="site.css"/>
+</head>
+<body>
+	<div id="search">
+	<div class="filter-area">
+			<div class="header">Search</div>
+			<div class="header-content">
+				<input type="text" name="search-box" id="search-box">
+				<input type="checkbox" name="keep-filter">Keep filter selections</input>
+				<div class="ui icon button search-button">
+					<i class="search icon"></i>
+				</div>
+			</div>
+	</div>
+
+	<div class="filter-area filters">
+			<div class="header">Filter By</div>
+			<div class="header-content">
+				<div class="ui basic vertical accordion menu">
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Time
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+				    		<p>From</p>
+					    	<input type="date" name="from" id="from-date">
+					    	<p>To</p>
+					    	<input type="date" name="to" id="to-date">
+					    	<p>Or...</p>
+					    	<input type="radio" name="dates" value="CAB" checked> Last 24 Hours<br>
+							<input type="radio" name="dates" value="PAS"> Last 3 Days<br>
+							<input type="radio" name="dates" value="PAS"> Last 7 Days<br>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Error Code
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>E100</option>
+					    		<option>01</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Error
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>Unknown Service ID</option>
+					    		<option>Booked Slot</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Source
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="radio" name="source" value="CAB" checked>Choose and Book<br>
+							<input type="radio" name="source" value="PAS"> Patient Admin System<br>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Action
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>Request available slots</option>
+					    		<option>Contact CAB staff</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      ID
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="checkbox" name="conv-id-check">Conversation ID</input>
+					    	<input type="text" name="convo-id" id="convo-id">
+					    	<input type="checkbox" name="message-id-check">Message ID</input>
+					    	<input type="text" name="message-id" id="message-id">
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      UBRN/USRN
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="checkbox" name="ubrn">UBRN</input>
+					    	<input type="text" name="ubrn-value" id="ubrn-value">
+					    	<input type="checkbox" name="usrn">USRN</input>
+					    	<input type="text" name="usrn-value" id="usrn-value">
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Service
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="text" name="service">
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Resolution
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="text" name="resolution">
+						</div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="cards">
+	<span id="titles">
+		<p>Patient Admin System (4)</p>
+		<p>Choose and Book (5)</p>
+		<p>System Failure (8)</p>
+		<p>All (17)</p>
+	</span>
+	<div id="errors">
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header system">
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="semantic/packaged/javascript/semantic.min.js"></script>
+	<script type="text/javascript" src="semantic/minified/modules/accordion.min.js"></script>
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+  		$('.ui.accordion').accordion();	});
+	</script>
+</body>
+</html>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		<script src="scripts/nav.js"></script>-->
+		<script src="http://code.jquery.com/jquery-1.8.3.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+	</body>
+</html>

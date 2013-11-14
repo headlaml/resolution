@@ -1,0 +1,188 @@
+/* line 1, ../sass/site.scss */
+html, body {
+  background-color: white;
+  height: 100%;
+  font: helvetica, sans-serif, solid;
+}
+
+/*#wrapper{
+	position: absolute;
+	height: 100%;
+}*/
+/* line 14, ../sass/site.scss */
+.filter-area {
+  border: 1px solid lightgrey;
+  width: 250px;
+  height: auto;
+  background-color: white;
+}
+
+/* line 20, ../sass/site.scss */
+#header {
+  background-color: #0064a6;
+  color: white;
+}
+
+/* line 25, ../sass/site.scss */
+.input-append button.add-on {
+  height: inherit !important;
+}
+
+/* line 29, ../sass/site.scss */
+.search-box {
+  width: 240px;
+}
+
+/* line 33, ../sass/site.scss */
+.header {
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #dbdbdb 100%, #d1d1d1 100%, #fefefe 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #dbdbdb), color-stop(100%, #d1d1d1), color-stop(100%, #fefefe));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #dbdbdb 100%, #d1d1d1 100%, #fefefe 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #dbdbdb 100%, #d1d1d1 100%, #fefefe 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #dbdbdb 100%, #d1d1d1 100%, #fefefe 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #dbdbdb 100%, #d1d1d1 100%, #fefefe 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 );
+  /* IE6-9 */
+  padding-left: 5px;
+  height: 25px;
+}
+
+/* line 46, ../sass/site.scss */
+#cards {
+  border: 1px solid lightgrey;
+  height: auto;
+  margin-left: 256px;
+  background-color: white;
+}
+
+/* line 53, ../sass/site.scss */
+.card {
+  width: 150px;
+  height: 80px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  -webkit-user-select: none;
+  cursor: url(magnify.cur), -moz-zoom-in;
+  transition: all 0.5s ease;
+}
+
+/* line 63, ../sass/site.scss */
+.card:active {
+  height: 150px;
+  width: 230px;
+  position: relative;
+}
+
+/* line 69, ../sass/site.scss */
+.card-header {
+  height: 20px;
+  background-color: #0064a6;
+  color: white;
+}
+
+/* line 75, ../sass/site.scss */
+#titles {
+  margin-left: 5px;
+}
+
+/* line 79, ../sass/site.scss */
+#titles p {
+  display: inline-block;
+  border: 2px solid #333;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* line 86, ../sass/site.scss */
+#titles p:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* line 92, ../sass/site.scss */
+li {
+  display: inline;
+  font-size: 1.5em;
+  line-height: 32px;
+}
+/* line 97, ../sass/site.scss */
+li a {
+  color: white;
+}
+/* line 100, ../sass/site.scss */
+li a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 109, ../sass/site.scss */
+li:hover {
+  background-color: #333;
+}
+
+/* line 115, ../sass/site.scss */
+#title {
+  background-color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* line 121, ../sass/site.scss */
+#header-title {
+  font-size: 2.0em;
+}
+
+/* line 125, ../sass/site.scss */
+#selected {
+  background-color: lightPink;
+}
+
+/* line 129, ../sass/site.scss */
+.row {
+  background-color: #b3d9f1;
+  border-bottom: solid 1px #0064a6;
+  font-size: 0.83em;
+}
+
+/* line 135, ../sass/site.scss */
+.icon {
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+/*.icon{
+		height: 32px;
+		width: 32px;
+	}*/
+/* line 147, ../sass/site.scss */
+#app {
+  /*position: absolute;
+  left: -170px;
+  top: 5px;*/
+}
+
+/*#search-button, #app-button, #user-button,, #list-button{
+		height: auto;
+		display: inline;
+		position: absolute;
+}*/
+/* line 160, ../sass/site.scss */
+#res {
+  background: url("../../Assets/Images/Message-Warning.png");
+  background-repeat: no-repeat;
+}
+
+/* line 165, ../sass/site.scss */
+#app-button, #user-button, #manual-button, #diary-button {
+  position: relative;
+}
